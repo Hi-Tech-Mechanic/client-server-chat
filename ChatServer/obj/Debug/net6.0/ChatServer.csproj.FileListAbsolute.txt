@@ -1,0 +1,14 @@
+F:\Development\===Projects===\SKFU\ClientServerApp\ChatServer\bin\Debug\net6.0\ChatServer.exe
+F:\Development\===Projects===\SKFU\ClientServerApp\ChatServer\bin\Debug\net6.0\ChatServer.deps.json
+F:\Development\===Projects===\SKFU\ClientServerApp\ChatServer\bin\Debug\net6.0\ChatServer.runtimeconfig.json
+F:\Development\===Projects===\SKFU\ClientServerApp\ChatServer\bin\Debug\net6.0\ChatServer.dll
+F:\Development\===Projects===\SKFU\ClientServerApp\ChatServer\bin\Debug\net6.0\ChatServer.pdb
+F:\Development\===Projects===\SKFU\ClientServerApp\ChatServer\obj\Debug\net6.0\ChatServer.GeneratedMSBuildEditorConfig.editorconfig
+F:\Development\===Projects===\SKFU\ClientServerApp\ChatServer\obj\Debug\net6.0\ChatServer.AssemblyInfoInputs.cache
+F:\Development\===Projects===\SKFU\ClientServerApp\ChatServer\obj\Debug\net6.0\ChatServer.AssemblyInfo.cs
+F:\Development\===Projects===\SKFU\ClientServerApp\ChatServer\obj\Debug\net6.0\ChatServer.csproj.CoreCompileInputs.cache
+F:\Development\===Projects===\SKFU\ClientServerApp\ChatServer\obj\Debug\net6.0\ChatServer.dll
+F:\Development\===Projects===\SKFU\ClientServerApp\ChatServer\obj\Debug\net6.0\refint\ChatServer.dll
+F:\Development\===Projects===\SKFU\ClientServerApp\ChatServer\obj\Debug\net6.0\ChatServer.pdb
+F:\Development\===Projects===\SKFU\ClientServerApp\ChatServer\obj\Debug\net6.0\ChatServer.genruntimeconfig.cache
+F:\Development\===Projects===\SKFU\ClientServerApp\ChatServer\obj\Debug\net6.0\ref\ChatServer.dll

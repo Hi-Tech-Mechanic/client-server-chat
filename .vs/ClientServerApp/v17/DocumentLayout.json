@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59B4CBFF-CACD-4F8C-A71F-43CA718995C6}|Server\\Server.csproj|f:\\development\\===projects===\\skfu\\clientserverapp\\server\\serverwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59B4CBFF-CACD-4F8C-A71F-43CA718995C6}|Server\\Server.csproj|solutionrelative:server\\serverwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF6CF53-4BFC-44B9-BD4A-E2FF2ABB8E2A}|ChatClient\\ChatClient.csproj|f:\\development\\===projects===\\skfu\\clientserverapp\\chatclient\\chatform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF6CF53-4BFC-44B9-BD4A-E2FF2ABB8E2A}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\chatform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF6CF53-4BFC-44B9-BD4A-E2FF2ABB8E2A}|ChatClient\\ChatClient.csproj|f:\\development\\===projects===\\skfu\\clientserverapp\\chatclient\\loginform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1DF6CF53-4BFC-44B9-BD4A-E2FF2ABB8E2A}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\loginform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B4CBFF-CACD-4F8C-A71F-43CA718995C6}|Server\\Server.csproj|f:\\development\\===projects===\\skfu\\clientserverapp\\server\\servermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59B4CBFF-CACD-4F8C-A71F-43CA718995C6}|Server\\Server.csproj|solutionrelative:server\\servermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF6CF53-4BFC-44B9-BD4A-E2FF2ABB8E2A}|ChatClient\\ChatClient.csproj|f:\\development\\===projects===\\skfu\\clientserverapp\\chatclient\\loginform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF6CF53-4BFC-44B9-BD4A-E2FF2ABB8E2A}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\loginform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Apostle\\AppData\\Local\\Temp\\.vsdbgsrc\\ee34aec267e065140087abd7fd236fad482e6d3ee1f4162ad1b181c8d9923474\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 85,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginForm.xaml.cs",
+              "DocumentMoniker": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\ChatClient\\LoginForm.xaml.cs",
+              "RelativeDocumentMoniker": "ChatClient\\LoginForm.xaml.cs",
+              "ToolTip": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\ChatClient\\LoginForm.xaml.cs",
+              "RelativeToolTip": "ChatClient\\LoginForm.xaml.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T07:39:48.637Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServerModel.cs",
+              "DocumentMoniker": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Server\\ServerModel.cs",
+              "RelativeDocumentMoniker": "Server\\ServerModel.cs",
+              "ToolTip": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Server\\ServerModel.cs",
+              "RelativeToolTip": "Server\\ServerModel.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAYwHAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T08:04:08.914Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServerWindow.xaml.cs",
+              "DocumentMoniker": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Server\\ServerWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Server\\ServerWindow.xaml.cs",
+              "ToolTip": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Server\\ServerWindow.xaml.cs",
+              "RelativeToolTip": "Server\\ServerWindow.xaml.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAwwHIAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T07:26:41.582Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.xaml",
+              "DocumentMoniker": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\ChatClient\\LoginForm.xaml",
+              "RelativeDocumentMoniker": "ChatClient\\LoginForm.xaml",
+              "ToolTip": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\ChatClient\\LoginForm.xaml",
+              "RelativeToolTip": "ChatClient\\LoginForm.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-27T15:28:12.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatForm.xaml.cs",
+              "DocumentMoniker": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\ChatClient\\ChatForm.xaml.cs",
+              "RelativeDocumentMoniker": "ChatClient\\ChatForm.xaml.cs",
+              "ToolTip": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\ChatClient\\ChatForm.xaml.cs",
+              "RelativeToolTip": "ChatClient\\ChatForm.xaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowDUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T15:00:28.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\Apostle\\AppData\\Local\\Temp\\.vsdbgsrc\\ee34aec267e065140087abd7fd236fad482e6d3ee1f4162ad1b181c8d9923474\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\Apostle\\AppData\\Local\\Temp\\.vsdbgsrc\\ee34aec267e065140087abd7fd236fad482e6d3ee1f4162ad1b181c8d9923474\\XamlReader.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AgIAALoBAAAAAAAAAADwv8QBAAAHAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T13:18:39.377Z",
+              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+﻿<Window x:Class="ChatClient.ChatForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatClient"
+        mc:Ignorable="d"
+        Title="Чат" Height="350" MinHeight="200" Width="550" MinWidth="300">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="15,0,15,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid HorizontalAlignment="Left">
+                <Border CornerRadius="5" Background="LightBlue" BorderBrush="DarkBlue" Margin="0,5,0,5" Padding="5,0,5,0" Height="25">
+                    <TextBlock Name="ServerName" Grid.Column="1" VerticalAlignment="Center"
+                               FontSize="14"><Run Language="ru-ru" Text="Сервер: 13.220"/>
+                    </TextBlock>
+                </Border>
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="15,0,15,10">
+            <TextBox Name="ChatBox" MinHeight="85" MinWidth="115" TextWrapping="WrapWithOverflow" IsReadOnly="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            </TextBox>
+        </Grid>
+
+        <Grid Margin="15,0,5,10" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="MessageBox" Grid.Column="0" Height="23" MinWidth="115"
+                     VerticalAlignment="Bottom" KeyDown="MessageBox_KeyDown" 
+                     VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"
+                     VerticalContentAlignment="Center"/>
+            <Button Name="SendButton" Grid.Column="1" Margin="5,0,10,0" Content="Отправить"
+                    Style="{StaticResource AverageButton}" Click="SendButton_Click"
+                    VerticalAlignment="Bottom" Width="95" Height="23" Grid.ColumnSpan="2"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        </Grid>
+        <!--<StackPanel Orientation="Horizontal" >
+            <TextBox Name="MessageBox" Height="23" Margin="15,280,0,0" VerticalAlignment="Bottom" Width="420" KeyDown="MessageBox_KeyDown" MinWidth="115" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" VerticalContentAlignment="Center"/>
+            <Button Name="SendButton" Content="Отправить" Style="{StaticResource AverageButton}" Click="SendButton_Click"
+                Margin="5,0,0,0" VerticalAlignment="Bottom" Width="95" Height="23" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        </StackPanel>-->
+    </Grid>
+</Window>

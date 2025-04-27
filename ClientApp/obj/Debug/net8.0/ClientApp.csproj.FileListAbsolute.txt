@@ -1,0 +1,14 @@
+F:\Development\===Projects===\SKFU\ClientServerApp\ClientApp\bin\Debug\net8.0\ClientApp.exe
+F:\Development\===Projects===\SKFU\ClientServerApp\ClientApp\bin\Debug\net8.0\ClientApp.deps.json
+F:\Development\===Projects===\SKFU\ClientServerApp\ClientApp\bin\Debug\net8.0\ClientApp.runtimeconfig.json
+F:\Development\===Projects===\SKFU\ClientServerApp\ClientApp\bin\Debug\net8.0\ClientApp.dll
+F:\Development\===Projects===\SKFU\ClientServerApp\ClientApp\bin\Debug\net8.0\ClientApp.pdb
+F:\Development\===Projects===\SKFU\ClientServerApp\ClientApp\obj\Debug\net8.0\ClientApp.GeneratedMSBuildEditorConfig.editorconfig
+F:\Development\===Projects===\SKFU\ClientServerApp\ClientApp\obj\Debug\net8.0\ClientApp.AssemblyInfoInputs.cache
+F:\Development\===Projects===\SKFU\ClientServerApp\ClientApp\obj\Debug\net8.0\ClientApp.AssemblyInfo.cs
+F:\Development\===Projects===\SKFU\ClientServerApp\ClientApp\obj\Debug\net8.0\ClientApp.csproj.CoreCompileInputs.cache
+F:\Development\===Projects===\SKFU\ClientServerApp\ClientApp\obj\Debug\net8.0\ClientApp.dll
+F:\Development\===Projects===\SKFU\ClientServerApp\ClientApp\obj\Debug\net8.0\refint\ClientApp.dll
+F:\Development\===Projects===\SKFU\ClientServerApp\ClientApp\obj\Debug\net8.0\ClientApp.pdb
+F:\Development\===Projects===\SKFU\ClientServerApp\ClientApp\obj\Debug\net8.0\ClientApp.genruntimeconfig.cache
+F:\Development\===Projects===\SKFU\ClientServerApp\ClientApp\obj\Debug\net8.0\ref\ClientApp.dll
