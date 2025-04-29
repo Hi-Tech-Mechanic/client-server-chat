@@ -36,8 +36,8 @@
               "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Data\\Data.csproj": {
                 "projectPath": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Data\\Data.csproj"
               },
-              "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\LoggingHelper\\Helpers.csproj": {
-                "projectPath": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\LoggingHelper\\Helpers.csproj"
+              "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Helpers\\Helpers.csproj": {
+                "projectPath": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Helpers\\Helpers.csproj"
               },
               "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Server\\Server.csproj": {
                 "projectPath": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Server\\Server.csproj"
@@ -152,14 +152,14 @@
         }
       }
     },
-    "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\LoggingHelper\\Helpers.csproj": {
+    "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Helpers\\Helpers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\LoggingHelper\\Helpers.csproj",
+        "projectUniqueName": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Helpers\\Helpers.csproj",
         "projectName": "Helpers",
-        "projectPath": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\LoggingHelper\\Helpers.csproj",
+        "projectPath": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Helpers\\Helpers.csproj",
         "packagesPath": "C:\\Users\\Apostle\\.nuget\\packages\\",
-        "outputPath": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\LoggingHelper\\obj\\",
+        "outputPath": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Helpers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Soft\\VisualStudio\\Shared\\NuGetPackages"
@@ -250,11 +250,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows7.0",
             "projectReferences": {
-              "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Data\\Data.csproj": {
-                "projectPath": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Data\\Data.csproj"
-              },
-              "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\LoggingHelper\\Helpers.csproj": {
-                "projectPath": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\LoggingHelper\\Helpers.csproj"
+              "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Helpers\\Helpers.csproj": {
+                "projectPath": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Helpers\\Helpers.csproj"
               }
             }
           }

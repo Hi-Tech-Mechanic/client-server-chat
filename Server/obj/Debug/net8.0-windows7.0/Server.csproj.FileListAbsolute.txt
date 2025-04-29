@@ -16,11 +16,10 @@ F:\Development\===Projects===\SKFU\ClientServerApp\Server\obj\Debug\net8.0-windo
 F:\Development\===Projects===\SKFU\ClientServerApp\Server\obj\Debug\net8.0-windows7.0\Server.AssemblyInfoInputs.cache
 F:\Development\===Projects===\SKFU\ClientServerApp\Server\obj\Debug\net8.0-windows7.0\Server.AssemblyInfo.cs
 F:\Development\===Projects===\SKFU\ClientServerApp\Server\obj\Debug\net8.0-windows7.0\Server.csproj.CoreCompileInputs.cache
+F:\Development\===Projects===\SKFU\ClientServerApp\Server\obj\Debug\net8.0-windows7.0\Server.sourcelink.json
 F:\Development\===Projects===\SKFU\ClientServerApp\Server\obj\Debug\net8.0-windows7.0\Server.csproj.Up2Date
 F:\Development\===Projects===\SKFU\ClientServerApp\Server\obj\Debug\net8.0-windows7.0\Server.dll
 F:\Development\===Projects===\SKFU\ClientServerApp\Server\obj\Debug\net8.0-windows7.0\refint\Server.dll
 F:\Development\===Projects===\SKFU\ClientServerApp\Server\obj\Debug\net8.0-windows7.0\Server.pdb
 F:\Development\===Projects===\SKFU\ClientServerApp\Server\obj\Debug\net8.0-windows7.0\Server.genruntimeconfig.cache
 F:\Development\===Projects===\SKFU\ClientServerApp\Server\obj\Debug\net8.0-windows7.0\ref\Server.dll
-F:\Development\===Projects===\SKFU\ClientServerApp\Server\bin\Debug\net8.0-windows7.0\Data.dll
-F:\Development\===Projects===\SKFU\ClientServerApp\Server\bin\Debug\net8.0-windows7.0\Data.pdb

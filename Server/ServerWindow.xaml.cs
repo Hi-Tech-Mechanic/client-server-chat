@@ -1,20 +1,18 @@
 ﻿namespace Server
 {
+    using Helpers;
     using System.ComponentModel;
     using System.Net;
     using System.Net.Sockets;
     using System.Text;
     using System.Windows;
-    using Helpers;
-
+    
     /// <summary>
     /// Логика взаимодействия для ServerWindow.xaml
     /// </summary>
     public partial class ServerWindow : Window
     {
-        private TcpListener currentTcpListener;
-
-        public static event Action<string> OnSendMessage = null!;
+        private readonly TcpListener currentTcpListener;
 
         public ServerWindow()
         {
@@ -66,14 +64,14 @@
             {
                 while (true)
                 {
-                    int byteRead = await stream.ReadAsync(buffer, 0, buffer.Length);
+                    int byteRead = await stream.ReadAsync(buffer);
                     if (byteRead == 0) break;
 
                     string message = Encoding.UTF8.GetString(buffer, 0, byteRead);
                     string logMessage = $"Получено от {client.Client.RemoteEndPoint}: {message}";
-                    DisplayInServerFormAndConsole(logMessage);
+                    this.DisplayInServerFormAndConsole(logMessage);
 
-                    await BroadcastMessageAsync(logMessage, client);
+                    await this.BroadcastMessageAsync(message, client);
                 }
             }
             catch (Exception ex)
@@ -104,7 +102,7 @@
                     try
                     {
                         NetworkStream stream = client.GetStream();
-                        await stream.WriteAsync(data, 0, data.Length);
+                        await stream.WriteAsync(data);
 
                         var logMessage = $"Отправлено к {client.Client.RemoteEndPoint}: {message}";
                         this.DisplayInServerFormAndConsole(logMessage);

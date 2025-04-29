@@ -32,7 +32,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Data": "1.0.0",
           "Helpers": "1.0.0"
         },
         "compile": {
@@ -55,8 +54,8 @@
     },
     "Helpers/1.0.0": {
       "type": "project",
-      "path": "../LoggingHelper/Helpers.csproj",
-      "msbuildProject": "../LoggingHelper/Helpers.csproj"
+      "path": "../Helpers/Helpers.csproj",
+      "msbuildProject": "../Helpers/Helpers.csproj"
     },
     "Server/1.0.0": {
       "type": "project",
@@ -107,8 +106,8 @@
             "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Data\\Data.csproj": {
               "projectPath": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Data\\Data.csproj"
             },
-            "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\LoggingHelper\\Helpers.csproj": {
-              "projectPath": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\LoggingHelper\\Helpers.csproj"
+            "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Helpers\\Helpers.csproj": {
+              "projectPath": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Helpers\\Helpers.csproj"
             },
             "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Server\\Server.csproj": {
               "projectPath": "F:\\Development\\===Projects===\\SKFU\\ClientServerApp\\Server\\Server.csproj"

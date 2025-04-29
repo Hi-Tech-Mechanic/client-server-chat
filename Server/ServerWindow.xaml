@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Server"
         mc:Ignorable="d"
-        Title="TCP сервер" Height="450" Width="800">
+        Title="TCP сервер" MinHeight="250" Height="450" MinWidth="400" Width="800">
     
     <Grid Grid.Row="1" Margin="15,0,15,15">
         <Grid.RowDefinitions>

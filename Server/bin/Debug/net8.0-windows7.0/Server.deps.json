@@ -8,19 +8,10 @@
     ".NETCoreApp,Version=v8.0": {
       "Server/1.0.0": {
         "dependencies": {
-          "Data": "1.0.0",
           "Helpers": "1.0.0"
         },
         "runtime": {
           "Server.dll": {}
-        }
-      },
-      "Data/1.0.0": {
-        "runtime": {
-          "Data.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
         }
       },
       "Helpers/1.0.0": {
@@ -35,11 +26,6 @@
   },
   "libraries": {
     "Server/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

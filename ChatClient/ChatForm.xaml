@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChatClient"
         mc:Ignorable="d"
-        Title="Чат" Height="350" MinHeight="200" Width="550" MinWidth="300">
+        Title="Чат" Height="350" MinHeight="250" Width="550" MinWidth="300">
 
     <Grid>
         <Grid.RowDefinitions>

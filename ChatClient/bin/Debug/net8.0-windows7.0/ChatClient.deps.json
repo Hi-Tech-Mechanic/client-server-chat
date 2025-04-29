@@ -34,7 +34,6 @@
       },
       "Server/1.0.0": {
         "dependencies": {
-          "Data": "1.0.0",
           "Helpers": "1.0.0"
         },
         "runtime": {

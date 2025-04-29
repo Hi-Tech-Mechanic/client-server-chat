@@ -6,11 +6,17 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Favicon-alternative.ico</ApplicationIcon>
+    <StartupObject>ChatClient.App</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Favicon-alternative.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Data\Data.csproj" />
-    <ProjectReference Include="..\LoggingHelper\Helpers.csproj" />
+    <ProjectReference Include="..\Helpers\Helpers.csproj" />
     <ProjectReference Include="..\Server\Server.csproj" />
   </ItemGroup>
   

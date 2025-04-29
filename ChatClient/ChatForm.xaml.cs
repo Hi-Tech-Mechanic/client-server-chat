@@ -1,12 +1,11 @@
 ﻿namespace ChatClient
 {
+    using Data;
+    using Helpers;
     using System.Net.Sockets;
     using System.Text;
     using System.Windows;
     using System.Windows.Input;
-    using Helpers;
-    using Data;
-    using Server;
 
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -18,19 +17,18 @@
         /// </summary>
         private const ushort bufferSize = 1024;
 
-        private List<User> Users; // warn возмонж не надо использовать список, так как в одном экземпляре используется 1 пользователь
-        private NetworkStream stream;
+        private readonly User User; // warn возмонж не надо использовать список, так как в одном экземпляре используется 1 пользователь
+        private NetworkStream stream = null!;
 
-        private string serverIdentifier { get; }
+        private string ServerIdentifier { get; }
 
-        public ChatForm(List<User> users, string ServerIdentifier)
+        public ChatForm(User user, string serverIdentifier)
         {
             InitializeComponent();
 
-            this.Users = users;
-            this.serverIdentifier = ServerIdentifier;
+            this.User = user;
+            this.ServerIdentifier = serverIdentifier;
             this.Loaded += DisplayServerName;
-            ServerWindow.OnSendMessage += AddMessageToChat;
 
             ConnectToServer();
         }
@@ -39,7 +37,7 @@
         {
             try
             {
-                var user = this.Users.Last();
+                var user = this.User;
                 await user.TcpClient.ConnectAsync("localhost", user.UsedServerPort);
                 stream = user.TcpClient.GetStream();
                 this.AddMessageToChat($"{user.UserName} - подключен к серверу");
@@ -59,13 +57,13 @@
             {
                 while (true)
                 {
-                    int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length);
+                    int bytesRead = await stream.ReadAsync(buffer);
                     if (bytesRead == 0) break;
 
                     string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
                     Dispatcher.Invoke(() =>
                     {
-                        this.AddMessageToChat($"[{Users.Last().UserName}]{message}"); // todo
+                        this.AddMessageToChat(message);
                     });
                 }
             }
@@ -93,19 +91,24 @@
 
         private async Task SendMessageAsync()
         {
-            string message = MessageBox.Text;
-            if (string.IsNullOrEmpty(message)) return;
-            if (stream == null)
+            if (this.stream == null)
             {
                 this.AddMessageToChat("Нет подключения к серверу");
                 return;
             }
 
+            string enteredMessage = MessageBox.Text;
+            if (string.IsNullOrEmpty(enteredMessage))
+                return;
+
+            string userName = GetUserNameDecoration(User.UserName);
+            string fullMessage = $"{userName} {MessageBox.Text}";
+
             try
             {
-                byte[] data = Encoding.UTF8.GetBytes(message);
-                await stream.WriteAsync(data, 0, data.Length);
-                this.AddMessageToChat($"[{Users.Last().UserName}] {message}");
+                byte[] data = Encoding.UTF8.GetBytes(fullMessage);
+                await stream.WriteAsync(data);
+                this.AddMessageToChat(fullMessage);
                 MessageBox.Clear();
             }
             catch (Exception ex)
@@ -116,7 +119,7 @@
 
         private void DisplayServerName(object sender, RoutedEventArgs e)
         {
-            ServerName.Text = $"Сервер: {this.serverIdentifier}";
+            ServerName.Text = $"Сервер: {this.ServerIdentifier}";
         }
 
         private void AddMessageToChat(string message)
@@ -125,5 +128,11 @@
         }
 
         #endregion
+
+        private static string GetUserNameDecoration(string userName)
+        {
+            var result = $"[{userName}]";
+            return result;
+        }
     }
 }

@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChatClient"
         mc:Ignorable="d"
-        Title="LoginForm" MinHeight="250" Height="250" MaxHeight="300" MinWidth="180" Width="225" MaxWidth="300">
-    
+        Title="Логин" MinHeight="280" Height="280" MaxHeight="300" MinWidth="225" Width="250" MaxWidth="300">
+
     <Grid VerticalAlignment="Center" Margin="0,-10,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -21,13 +21,18 @@
 
         <StackPanel Grid.Row="1" Margin="20,15,20,10">
             <Label HorizontalAlignment="Center">Список серверов</Label>
+
             <ComboBox Name="ServersComboBox" SelectionChanged="SelectServer_Click">
             </ComboBox>
+
             <Button Name="CreateServerButton" Margin="0,10,0,0"
                     Click="CreateServer_Click">Создать сервер</Button>
+
+            <Button Name="DeleteAllServersButton" Margin="0,10,0,0"
+                    Click="DeleteAllServers_Click" IsEnabled="false">Удалить все сервера</Button>
         </StackPanel>
 
         <Button Name="ContinueButton" Grid.Row="2" Margin="20,20,20,0" Content="Далее" 
-                Style="{StaticResource AverageButton}" IsEnabled="false" Click="ContinueButton_Click"></Button>
+                Style="{StaticResource AverageButton}" Click="ContinueButton_Click"></Button>
     </Grid>
 </Window>

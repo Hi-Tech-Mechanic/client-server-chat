@@ -1,20 +1,18 @@
 ﻿namespace Server
 {
-    using System.Net;
-    using System.Net.Sockets;
-    using System.IO;
-    using System.Text.Json;
     using System.Collections.ObjectModel;
     using System.Collections.Specialized;
-    using Data;
+    using System.IO;
+    using System.Net;
+    using System.Net.Sockets;
+    using System.Text.Json;
 
     public static class ServerModel
     {
         private const string dataFile = "server_data.json";
-        internal static readonly List<TcpClient> Clients = new List<TcpClient>();
-        //public static ObservableCollection<User> Users { get; private set; } = new();
-        //public static ObservableCollection<ChatForm> ChatForm = new();
+        internal static readonly List<TcpClient> Clients = new();
         public static ObservableCollection<TcpListener> TcpListeners { get; private set; } = new();
+
         public static bool IsAlive { get; private set; } = false;
 
         public static event Action ServersCountChanged = null!;
@@ -22,9 +20,9 @@
         static ServerModel()
         {
             IsAlive = true;
-            TcpListeners.CollectionChanged += OnItemsChangedHandler;
 
             TcpListeners = LoadServers();
+            TcpListeners.CollectionChanged += OnItemsChangedHandler;
         }
 
         public static int GetPort(int serverIndex)
@@ -49,25 +47,32 @@
             return endPoint;
         }
 
-        #region LocalMethods
+        #region PublicMethods
 
-        internal static void AddServer(TcpListener tcpListener)
+        public static void AddServer(TcpListener tcpListener)
         {
             tcpListener.Start();
             TcpListeners.Add(tcpListener);
-
-            SaveServers(TcpListeners);
         }
 
-        internal static void RemoveServer(TcpListener tcpListener)
+        public static void RemoveServer(TcpListener tcpListener)
         {
             TcpListeners.Remove(tcpListener);
-            SaveServers(TcpListeners);
         }
+
+        public static void ClearAllServers()
+        {
+            TcpListeners.Clear();
+        }
+
+        #endregion
+
+        #region LocalMethods
 
         private static void OnItemsChangedHandler(object? sender, NotifyCollectionChangedEventArgs e)
         {
             ServersCountChanged?.Invoke();
+            SaveServers();
 
             if (e.OldItems != null)
             {
@@ -80,9 +85,9 @@
                 }
             }
 
-            bool ListenersIsEmpty()
+            static bool ListenersIsEmpty()
             {
-                return TcpListeners.Count == 0;
+                return TcpListeners?.Count == 0;
             }
         }
 
@@ -90,30 +95,31 @@
 
         #region Save&Load
 
-        private static void SaveServers(ObservableCollection<TcpListener> tcpListeners)
+        private static void SaveServers()
         {
+            var tmpTcpListeners = TcpListeners;
             List<TcpListenerInfo> currentServers = new();
-            foreach (var listener in tcpListeners)
+            foreach (var listener in tmpTcpListeners)
             {
-                var endPoint = listener.LocalEndpoint as IPEndPoint;
-                if (endPoint != null)
+                if (listener.LocalEndpoint is IPEndPoint endPoint)
                 {
                     currentServers.Add(new TcpListenerInfo
                     {
                         IpAddress = endPoint.Address.ToString(),
                         Port = endPoint.Port,
-                        Active = (listener.Server != null || listener.Server!.IsBound) ? true : false,
+                        Active = (listener.Server != null || listener.Server!.IsBound),
                     });
                 }
             }
 
-            var previousData = LoadTcpListenerInfo();
-            List<TcpListenerInfo> combinedData = previousData.Concat(currentServers).ToList();
-            string newData = JsonSerializer.Serialize(combinedData);
+            //var previousData = LoadTcpListenerInfo();
+            //List<TcpListenerInfo> combinedData = previousData.Concat(currentServers).ToList();
+            string newData = JsonSerializer.Serialize(currentServers);
+            //newData.Distinct();
             File.WriteAllText(dataFile, newData);
         }
 
-        private static ObservableCollection<TcpListener> LoadServers()
+        public static ObservableCollection<TcpListener> LoadServers()
         {
             if (File.Exists(dataFile) == false)
                 return new ObservableCollection<TcpListener>();

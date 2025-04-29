@@ -1,0 +1,14 @@
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+bin/
+obj/
+
+packages/
+*.nupkg
+
+*.bak
+*.tmp
