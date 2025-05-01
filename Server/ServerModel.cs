@@ -112,10 +112,7 @@
                 }
             }
 
-            //var previousData = LoadTcpListenerInfo();
-            //List<TcpListenerInfo> combinedData = previousData.Concat(currentServers).ToList();
             string newData = JsonSerializer.Serialize(currentServers);
-            //newData.Distinct();
             File.WriteAllText(dataFile, newData);
         }
 

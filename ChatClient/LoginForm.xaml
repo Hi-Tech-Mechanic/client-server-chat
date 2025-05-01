@@ -33,6 +33,6 @@
         </StackPanel>
 
         <Button Name="ContinueButton" Grid.Row="2" Margin="20,20,20,0" Content="Далее" 
-                Style="{StaticResource AverageButton}" Click="ContinueButton_Click"></Button>
+                Style="{StaticResource AverageButton}" IsEnabled="false" Click="ContinueButton_Click"></Button>
     </Grid>
 </Window>

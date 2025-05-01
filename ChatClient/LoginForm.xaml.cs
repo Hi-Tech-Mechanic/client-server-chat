@@ -62,7 +62,6 @@
                 var lastServerIndex = ServerModel.TcpListeners.Count - 1;
                 var serverAdress = ServerModel.GetLocalEndPoint(lastServerIndex)?.ToString();
                 this.SelectServer(serverAdress);
-                //this.ServersComboBox.SelectedIndex = lastServerIndex;
 
                 this.ContinueButton.IsEnabled = true;
             }
